@@ -494,9 +494,10 @@ img {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     width: 100%;
-    height: auto;
+    max-height: 500px;
+    object-position: top;
     object-fit: cover;
-    aspect-ratio: 4/3;
+    aspect-ratio: 1/1;
 }
 
 .floating-badge {
@@ -547,6 +548,38 @@ img {
 .floating-text span {
     font-size: 0.75rem;
     color: var(--text-muted);
+}
+
+/* --- BIO SECTION --- */
+.bio-section {
+    position: relative;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.bio-inner {
+    background-color: var(--bg-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 3rem 4rem;
+    border: 1px solid rgba(15, 94, 104, 0.05);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bio-text {
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.bio-text:last-child {
+    margin-bottom: 0;
+}
+
+.text-primary {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
 }
 
 /* --- SERVICES --- */
